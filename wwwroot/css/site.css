@@ -59,8 +59,10 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url('../assets/kn3ai07br4d11.png');
+    background-repeat: repeat;
 }
 .footer {
   position: absolute;
@@ -68,4 +70,88 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Exo 2', sans-serif !important;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px magenta;
+}
+h5 {
+    font-family: 'Exo 2', sans-serif !important;
+    color: white;
+    text-shadow: 2px 2px 5px magenta;
+}
+p {
+    font-family: 'Exo 2', sans-serif !important;
+    color: #d28aff !important;
+    text-shadow: 1px 1px 3px black;
+}
+nav .navbar-nav li a {
+    color: #d28aff !important;
+    text-shadow: 1px 1px 3px black !important;
+}
+.navbar img {
+    max-height: 60px;
+}
+
+table, th, td {
+    background-color: rgba(0,0,0,0.3) !important;
+    border: 0px !important;
+    color: #d28aff !important;
+    text-shadow: 1px 1px 4px black !important;
+}
+
+.form-group {
+    color: #d28aff !important;
+    text-shadow: 1px 1px 3px black !important;
+}
+eliminar {
+    color: #d28aff !important;
+    text-shadow: 1px 1px 3px black !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+a:link {
+    color: white;
+}
+/*a link the user has visited*/
+a:visited {
+    color: #d28aff !important;
+}
+/*a link when the user mouses over it*/
+a:hover {
+    color: yellow;
+}
+/*a link the moment it is clicked*/
+a:active {
+    color: darkmagenta;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    font-family: 'Exo 2', sans-serif !important;
+    background-color: rgba(0,0,0,0.7);
+    border: 0px !important;
+    color: #d28aff !important;
+    text-shadow: 1px 1px 3px black !important;
+}
+
+row, dl{
+    background-color: rgba(0,0,0,0.6) !important;
+    border: 0px !important;
+    color: #d28aff !important;
+    text-shadow: 1px 1px 4px black !important;
 }

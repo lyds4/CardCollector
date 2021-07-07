@@ -1,8 +1,39 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<head>
+    @*FONTS*@
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+</head>
 <div class="text-center">
     <h1 class="display-4">Catálogo de Cartas</h1>
-    <p>Cartitas</p>
+    <p>Catálogo de cartas para poder registrar todas las cartas que se van agregando a la colección.</p>
+    @*<p>Hecho por Julia Kreimer con la ayuda de la fantástica Tila para NT1/ORT</p>*@
 </div>
+<p>
+    <div class="row">
+        <div class="column">
+            <a class="align-middle" asp-controller="Cartas" asp-action="Create">
+                <img src="~/assets/j.png" width="175" alt="Crear Nueva Carta">
+                <h5>Crear nueva Carta</h5>
+            </a>
+            </div>
+            <div class="column">
+                <a class="align-middle" asp-controller="Cartas" asp-action="Index">
+                    <img src="~/assets/k.png" width="175" alt="Ver lista de Cartas">
+                    <h5>Ver Cartas</h5>
+                </a>
+                </div>
+                <div class="column">
+                    <a class="align-middle" asp-controller="Cartas" asp-action="MostrarBusqueda">
+                        <img src="~/assets/b.png" width="175" alt="buscar">
+                        <h5>Buscar</h5>
+                    </a>
+                </div>
+    </div>
+</p>

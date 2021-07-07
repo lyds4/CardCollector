@@ -11,7 +11,7 @@ namespace CardCollector.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; } // prop + tabtab
-        [Required]
+        [Required, MinLength(2), MaxLength(22)]
         public String Nombre { get; set; }
         public String Descripcion { get; set; }
         [Range(1,50)]
