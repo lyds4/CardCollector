@@ -9,8 +9,9 @@ namespace CardCollector.Models
 {
     public class Carta
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public int Id { get; set; } // prop + tabtab
+        public int IdUser { get; set; }
         [Required]
         public String Nombre { get; set; }
         public String Descripcion { get; set; }

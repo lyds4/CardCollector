@@ -14,5 +14,6 @@ namespace CardCollector.Data
         {
         }
         public DbSet<CardCollector.Models.Carta> Carta { get; set; }
+        public DbSet<CardCollector.Models.Usuario> Usuario { get; set; }
     }
 }
