@@ -4,45 +4,46 @@
         <tr>
             <th>
                 <!--Html.DisplayNameFor(model => model.Employee.First_Name) -->
-                Card Name
+                Nombre
             </th>
             <th>
                 <!--Html.DisplayNameFor(model => model.Employee.Last_Name) -->
-                Description
+                Descripción
             </th>
             <th>
                 <!--Html.DisplayNameFor(model => model.Employee.Dni) -->
-                Owner
+                Usuario
             </th>
-            <th>
-                <!--Html.DisplayNameFor(model => model.Employee.Dni) -->
-                Design
-            </th>
-
-            <th></th>
+            <!--<th>-->
+            <!--Html.DisplayNameFor(model => model.Employee.Dni) -->
+            <!--Diseño
+            </th>-->
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.cardName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.userName)
-            </td>
-            <td>
-                ImageUser@item.idCard
-            </td>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cardName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.userName)
+                </td>
+                @*<td>
+                        ImageUser@item.idCard
+                    </td>*@
 
-            <td>
-                <a asp-controller="Card" asp-action="GifCard" asp-route-id="@item.idCard">Regalar</a>
-            </td>
-        </tr>
+                @*<td>
+                        <a asp-controller="Card" asp-action="GifCard" asp-route-id="@item.idCard">Regalar</a>
+                    </td>*@
+            </tr>
         }
     </tbody>
 </table>
+<div>
+    <a asp-action="Index">Ver todas las cartas</a>
+</div>
